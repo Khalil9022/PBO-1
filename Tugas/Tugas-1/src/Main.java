@@ -10,7 +10,7 @@ public class Main {
         float rata = 0;
         
         System.out.print("Masukkan nama :");
-        nama = input.next();
+        nama = input.nextLine();
         for (int i = 0; i < 5; i++) {
             System.out.print("Nilai ke-" + i + " : ");
             nilai[i] = input.nextInt();
@@ -19,6 +19,7 @@ public class Main {
         
         max = nilai[0];
         min = nilai[0];
+        rata = rata/5;
         
         for (int j = 0; j < 5; j++) {
             if (nilai[j] < max){
@@ -29,7 +30,7 @@ public class Main {
             }
         }
         
-        System.out.println("\nNama : "+nama);
+        System.out.println("\nNama : "+ nama);
         System.out.println("Nilai Tertinggi : " + max);
         System.out.println("Nilai Terendah : " + min);
         System.out.println("Rata-rata : "+rata);

@@ -1,21 +1,20 @@
 public class LimasSegitiga extends Segitiga{
-    
-    double tinggiLimas , volume ; 
+   
+        private double tinggiLimas, volume ;
 
-    public LimasSegitiga(double alas, double tinggi, double Tinggi) {
+    public LimasSegitiga(double alas, double tinggi) {
         super(alas, tinggi);
-        this.tinggiLimas = Tinggi;
     }
-    
+
     @Override
-    void  Volume (){
-        volume = 1.0 / 3.0 * luasSegitiga()* tinggiLimas ;
-        System.out.println(volume);
+    double  luasSegitiga (){
+        return luas ; // luasnya static 
     }
     
-    double Volume (double tinggi, double alas){
-        volume = 1.0/3.0 * 1.0/2.0 *  alas * tinggi * tinggiLimas ;
-        return volume ;
+    double Volume (double Tinggi3d){
+        this.tinggiLimas = Tinggi3d;
+        volume =   1.0/3.0 * luasSegitiga() * tinggiLimas ;
+        return volume ; 
     }
       
 }

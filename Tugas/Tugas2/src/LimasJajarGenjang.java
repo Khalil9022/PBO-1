@@ -2,7 +2,8 @@
 
 public class LimasJajarGenjang extends JajarGenjang{
 
-    private double tinggiLimas, volume ;
+    double tinggiLimas;
+    private double  volume ;
 
     public LimasJajarGenjang(double alas, double tinggi) {
         super(alas, tinggi);

@@ -1,7 +1,8 @@
 
 public class PrismaJajarGenjang extends JajarGenjang {
     
-    private double tinggiPrisma, volume ;
+    double tinggiPrisma;
+    private double volume ;
 
     public PrismaJajarGenjang(double alas, double tinggi) {
         super(alas, tinggi);

@@ -1,6 +1,7 @@
 public class LimasSegitiga extends Segitiga{
    
-        private double tinggiLimas, volume ;
+        double tinggiLimas;
+        private  double volume ;
 
     public LimasSegitiga(double alas, double tinggi) {
         super(alas, tinggi);

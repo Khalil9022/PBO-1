@@ -1,6 +1,6 @@
 public class Segitiga {
    
-        private double alasDbl , tinggiDbl  ;
+    private double alasDbl , tinggiDbl  ;
     private int alasInt , tinggiInt ; 
     static double luas;
     

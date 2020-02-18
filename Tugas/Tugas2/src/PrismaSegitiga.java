@@ -1,7 +1,8 @@
 
 public class PrismaSegitiga extends Segitiga {
     
-       private double tinggiPrisma, volume ;
+       double tinggiPrisma;
+       private  double volume ;
 
     public PrismaSegitiga(double alas, double tinggi) {
         super(alas, tinggi);

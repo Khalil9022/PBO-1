@@ -10,7 +10,8 @@ public class Main {
         do {
                 System.out.println("Menu : ");
                 System.out.println("1. Segitiga dan turunannya ");
-                System.out.println("1. Jajargenjang dan turunannya ");
+                System.out.println("2. Jajargenjang dan turunannya ");
+                System.out.println("3. EXIT ");
                 System.out.println("Pilihan : ");
                 pil = input.nextByte();
 
@@ -20,8 +21,6 @@ public class Main {
                         System.out.println("- Luas Segitiga   ");
                         System.out.println("- Volume Prisma Segitiga");
                         System.out.println("- Volume Limas Segitiga\n");
-
-
 
                         System.out.print("Alas : " );
                         alas = input.nextDouble();

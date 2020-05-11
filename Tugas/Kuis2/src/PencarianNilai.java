@@ -1,5 +1,5 @@
 
-public class PencarianNilai {
+public class PencarianNilai implements InterfaceNilai{
     private int nilai1,nilai2,nilai3,nilai4,rata ;
     private String check ; 
  
@@ -10,16 +10,18 @@ public class PencarianNilai {
         this.nilai4 = nilai4 ;
     }
     
-    private int setRata() {
+     private int setRata() {
         rata = (nilai1 + nilai2 + nilai3 + nilai4)/4 ;
         return rata; 
     }
     
-    protected int getRata() {
+    @Override
+    public int getRata() {
         return setRata() ;
     }
     
-    protected String checkLulus () {
+    @Override
+    public String checkLulus() {
         if (getRata() > 85 && getRata() <101) {
             return check = "LULUS" ;
         }
@@ -27,5 +29,6 @@ public class PencarianNilai {
             return check = "GAGAL" ;
         }
     }
+
     
 }

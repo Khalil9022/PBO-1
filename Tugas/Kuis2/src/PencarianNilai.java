@@ -1,7 +1,7 @@
 
 public class PencarianNilai {
-    int nilai1,nilai2,nilai3,nilai4,rata ;
-    String check ; 
+    private int nilai1,nilai2,nilai3,nilai4,rata ;
+    private String check ; 
  
     public PencarianNilai (int nilai1, int nilai2, int nilai3, int nilai4) {
         this.nilai1 = nilai1 ;
@@ -10,16 +10,16 @@ public class PencarianNilai {
         this.nilai4 = nilai4 ;
     }
     
-    public int setRata() {
+    private int setRata() {
         rata = (nilai1 + nilai2 + nilai3 + nilai4)/4 ;
         return rata; 
     }
     
-    public int getRata() {
+    protected int getRata() {
         return setRata() ;
     }
     
-    public String checkLulus () {
+    protected String checkLulus () {
         if (getRata() > 85 && getRata() <101) {
             return check = "LULUS" ;
         }

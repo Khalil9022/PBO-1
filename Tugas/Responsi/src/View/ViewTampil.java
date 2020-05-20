@@ -43,7 +43,7 @@ public class ViewTampil extends JFrame {
     public JTable tabel ;
     public DefaultTableModel tabelModel;
     public JScrollPane scrollPane; 
-    public Object namaKolom [] =  {"id","no_hp","umur","email",""} ; 
+    public Object namaKolom [] =  {"id","no_hp","id_buku","judul buku",""} ; 
     
     public ViewTampil () {
         background.setLayout(null);
